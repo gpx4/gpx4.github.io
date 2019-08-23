@@ -1,1 +1,41 @@
-theme: jekyll-theme-cayman
+# Site
+name: "GPX4 Rare Disease Community"
+title: "GPX4 Community"
+description: "Community of families affected by mutations in GPX4 gene working towards treatment 💪"
+meta_description: "Rare disease community of families affected by GPX4 gene working with researchers towards a treatment & cure."
+logo: 'assets/images/logo.png'
+favicon: 'assets/images/favicon.ico'
+paginate: 12
+baseurl: ''
+email: 'sanath@gpx4.org'
+google_analytics: 'UA-46278016-1'
+
+# Authors
+authors:
+  sanath:
+    name: sanath
+    display_name: Sanath
+    # gravatar: e56154546cf4be74e393c62d1ae9f9d4
+    email: sanath@gpx4.org
+    twitter: https://twitter.com/sanathkr_
+    description: "Father of a 1yr old boy with novel mutation in GPX4 gene"
+
+# Plugins
+plugins: 
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-archives
+        
+# Archives
+jekyll-archives:
+  enabled:
+    - categories
+  layout: archive
+  permalinks:
+    category: '/category/:name/'
+    
+# Other
+markdown: kramdown
+highlighter: rouge
