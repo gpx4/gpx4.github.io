@@ -13,8 +13,8 @@ At the outset, it might seem impossible for a fledgeling organization to mobiliz
 * **Patient Network Effect**: By creating a strong, supportive, and inclusive patient community, we will help researchers and drug developers focus on the solving the technical problems while we liason with the patient community. 
 * **MVP (minimal viable product)**: We act more like a business and less like an academic organization. We will identify, fund, and support the smallest valuable step towards treatment and iterate quickly. We will never sacrifice on safety and quality.
 
-### Where are we in the process?
-*Image showing where we are in the process*
+<!-- ### Where are we in the process? -->
+<!-- *Image showing where we are in the process* -->
 
 ### Team
 
@@ -22,4 +22,4 @@ At the outset, it might seem impossible for a fledgeling organization to mobiliz
 
 * *Ramya Ramaswamy, Founder & Mother of Raghav* - [ramya@gpx4.org](mailto:ramya@gpx4.org)
 
-* *Dr. Russel Saneto, Research & Clinical Team* - [Seattle Children's Hospital](https://www.seattlechildrens.org/directory/russell-p-saneto/)
+<!-- * *Dr. Russel Saneto, Research & Clinical Team* - [Seattle Children's Hospital](https://www.seattlechildrens.org/directory/russell-p-saneto/) -->
