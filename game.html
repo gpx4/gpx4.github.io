@@ -7,21 +7,27 @@
   crossorigin="anonymous">
   </script>
 
+<script src="https://cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js"></script>
+
 <script>
   $(document).ready(function() {
 
     var $img = $("#cartoonimg");
-    var images = ["assets/images/bear.png", "assets/images/dog.png"]
+    var images = ["bear.png", "1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg", "7.jpg"]
     var next = 0;
 
     var nextImageFn = function() {
       next = (next + 1) % images.length
-      $img.attr("src", images[next])
+      $img.attr("src", "assets/images/"+images[next])
       console.log("next", next)
     }
 
+    interact('#wrapper')
+    .on('tap', nextImageFn)
+    .on('hold', nextImageFn);
+
     // $("#wrapper").on("tap", nextImageFn)
-    $("#wrapper").on("click", nextImageFn)
+    // $("#wrapper").on("click", nextImageFn)
   })
 </script>
 
