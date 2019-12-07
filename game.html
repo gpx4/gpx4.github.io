@@ -1,0 +1,66 @@
+<html>
+
+<head>
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous">
+  </script>
+
+<script>
+  $(document).ready(function() {
+
+    var $img = $("#cartoonimg");
+    var images = ["assets/images/bear.png", "assets/images/dog.png"]
+    var next = 0;
+
+    var nextImageFn = function() {
+      next = (next + 1) % images.length
+      $img.attr("src", images[next])
+      console.log("next", next)
+    }
+
+    // $("#wrapper").on("tap", nextImageFn)
+    $("#wrapper").on("click", nextImageFn)
+  })
+</script>
+
+<style>
+
+body {
+  background: black;
+}
+
+#wrapper {
+  height: 100%;
+  z-index: 1000;
+}
+
+.cartoon  {
+  /* max-width: 300px; */
+  /* max-height: 300px; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
+
+.cartoon img {
+  max-width: 500px;
+  max-height: 500px;
+}
+</style>
+
+</head>
+
+<body>
+  <div id="wrapper">
+  <div class="cartoon">
+    <img src="assets/images/bear.png" id="cartoonimg"/>
+  </div>
+  </div>
+</body>
+
+</html>
